@@ -1,0 +1,867 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-05-29T08:35:21.071Z",
+        "before": [
+          {
+            "result": {
+              "duration": 17000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.api.stepdefinition.Hooks.testStart(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "To create new student using cucumber Data Table",
+        "description": "",
+        "id": "to-create-a-new-student;to-create-new-student-using-cucumber-data-table;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user has access to endpoint \"/addStudent\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/addStudent\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.api.stepdefinition.ViewStudentDetailsStepdefinition.userHasAccessToEndpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2333000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user creates a student",
+            "match": {
+              "location": "com.api.stepdefinition.CreateStudentStepdefinition.userCreatesAStudent(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname",
+                  "lastname",
+                  "id",
+                  "nationality",
+                  "studentClass"
+                ]
+              },
+              {
+                "cells": [
+                  "Selvaraj",
+                  "Karuppiah",
+                  "1",
+                  "Indian",
+                  "1A"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should get the response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "com.api.stepdefinition.ViewStudentDetailsStepdefinition.userShouldGetTheResponseCode(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@studentAPI"
+          },
+          {
+            "name": "@createStudent"
+          },
+          {
+            "name": "@createStudentDataTable"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-29T08:35:23.547Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.api.stepdefinition.Hooks.testStart(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "To create new student using cucumber Data Table",
+        "description": "",
+        "id": "to-create-a-new-student;to-create-new-student-using-cucumber-data-table;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user has access to endpoint \"/addStudent\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/addStudent\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.api.stepdefinition.ViewStudentDetailsStepdefinition.userHasAccessToEndpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 138000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user creates a student",
+            "match": {
+              "location": "com.api.stepdefinition.CreateStudentStepdefinition.userCreatesAStudent(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname",
+                  "lastname",
+                  "id",
+                  "nationality",
+                  "studentClass"
+                ]
+              },
+              {
+                "cells": [
+                  "Selva",
+                  "Raj",
+                  "2",
+                  "Sinagpore",
+                  "3A"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should get the response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "com.api.stepdefinition.ViewStudentDetailsStepdefinition.userShouldGetTheResponseCode(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@studentAPI"
+          },
+          {
+            "name": "@createStudent"
+          },
+          {
+            "name": "@createStudentDataTable"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-29T08:35:23.700Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.api.stepdefinition.Hooks.testStart(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "To create new student using JSON data",
+        "description": "",
+        "id": "to-create-a-new-student;to-create-new-student-using-json-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user has access to endpoint \"/addStudent\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/addStudent\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.api.stepdefinition.ViewStudentDetailsStepdefinition.userHasAccessToEndpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 165000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user creates a student using data \"create3\" from JSON file \"studentBody.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"create3\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"studentBody.json\"",
+                  "offset": 59
+                }
+              ],
+              "location": "com.api.stepdefinition.CreateStudentStepdefinition.userCreatesAStudentUsingDataFromJSONFile(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user should get the response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "com.api.stepdefinition.ViewStudentDetailsStepdefinition.userShouldGetTheResponseCode(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@studentAPI"
+          },
+          {
+            "name": "@createStudent"
+          },
+          {
+            "name": "@createStudentFromJSON"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-29T08:35:23.877Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.api.stepdefinition.Hooks.testStart(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "To create new student using JSON data",
+        "description": "",
+        "id": "to-create-a-new-student;to-create-new-student-using-json-data;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user has access to endpoint \"/addStudent\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/addStudent\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.api.stepdefinition.ViewStudentDetailsStepdefinition.userHasAccessToEndpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 56000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user creates a student using data \"create4\" from JSON file \"studentBody.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"create4\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"studentBody.json\"",
+                  "offset": 59
+                }
+              ],
+              "location": "com.api.stepdefinition.CreateStudentStepdefinition.userCreatesAStudentUsingDataFromJSONFile(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user should get the response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "com.api.stepdefinition.ViewStudentDetailsStepdefinition.userShouldGetTheResponseCode(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@studentAPI"
+          },
+          {
+            "name": "@createStudent"
+          },
+          {
+            "name": "@createStudentFromJSON"
+          }
+        ]
+      }
+    ],
+    "name": "To create a new student",
+    "description": "",
+    "id": "to-create-a-new-student",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/CreateStudent.feature",
+    "tags": [
+      {
+        "name": "@studentAPI",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@createStudent",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 13
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-05-29T08:35:23.939Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.api.stepdefinition.Hooks.testStart(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "To delete a student with ID",
+        "description": "",
+        "id": "to-delete-a-student;to-delete-a-student-with-id;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user has access to endpoint \"/deleteStudent\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/deleteStudent\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.api.stepdefinition.ViewStudentDetailsStepdefinition.userHasAccessToEndpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 43000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user deletes a student",
+            "match": {
+              "location": "com.api.stepdefinition.DeleteStudentStepdefinition.userDeletesAStudent(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id"
+                ]
+              },
+              {
+                "cells": [
+                  "4"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should get the response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "com.api.stepdefinition.ViewStudentDetailsStepdefinition.userShouldGetTheResponseCode(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@studentAPI"
+          },
+          {
+            "name": "@deleteStudent"
+          },
+          {
+            "name": "@deleteStudentIDs"
+          }
+        ]
+      }
+    ],
+    "name": "To delete a student",
+    "description": "",
+    "id": "to-delete-a-student",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/DeleteStudent.feature",
+    "tags": [
+      {
+        "name": "@studentAPI",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@deleteStudent",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 13
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-05-29T08:35:24.001Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.api.stepdefinition.Hooks.testStart(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "To update a student with ID",
+        "description": "",
+        "id": "to-update-a-student;to-update-a-student-with-id;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user has access to endpoint \"/updateStudent\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/updateStudent\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.api.stepdefinition.ViewStudentDetailsStepdefinition.userHasAccessToEndpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 59000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user updates a student",
+            "match": {
+              "location": "com.api.stepdefinition.UpdateStudentStepdefinition.userUpdatesAStudent(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname",
+                  "lastname",
+                  "id",
+                  "nationality",
+                  "studentClass"
+                ]
+              },
+              {
+                "cells": [
+                  "John",
+                  "Martin",
+                  "3",
+                  "Canada",
+                  "1A"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should get the response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "com.api.stepdefinition.ViewStudentDetailsStepdefinition.userShouldGetTheResponseCode(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@studentAPI"
+          },
+          {
+            "name": "@updateStudent"
+          },
+          {
+            "name": "@updateStudent"
+          }
+        ]
+      }
+    ],
+    "name": "To update a student",
+    "description": "",
+    "id": "to-update-a-student",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/UpdateStudent.feature",
+    "tags": [
+      {
+        "name": "@studentAPI",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@updateStudent",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 13
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-05-29T08:35:24.086Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.api.stepdefinition.Hooks.testStart(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "To view student details with ID and Class",
+        "description": "",
+        "id": "to-view-the-student-details;to-view-student-details-with-id-and-class",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user has access to endpoint \"/fetchStudents?id\u003d2\u0026studentClass\u003d3A\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/fetchStudents?id\u003d2\u0026studentClass\u003d3A\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.api.stepdefinition.ViewStudentDetailsStepdefinition.userHasAccessToEndpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 493000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user makes a request to view student IDs",
+            "match": {
+              "location": "com.api.stepdefinition.ViewStudentDetailsStepdefinition.userMakesARequestToViewstudentIDs()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 51000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user makes a request to view details of a student ID",
+            "match": {
+              "location": "com.api.stepdefinition.ViewStudentDetailsStepdefinition.userMakesARequestToViewDetailsOfStudentID()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should get the response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "com.api.stepdefinition.ViewStudentDetailsStepdefinition.userShouldGetTheResponseCode(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@studentAPI"
+          },
+          {
+            "name": "@viewStudent"
+          },
+          {
+            "name": "@viewStudentDetails"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-29T08:35:24.643Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.api.stepdefinition.Hooks.testStart(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "To view student details with class",
+        "description": "",
+        "id": "to-view-the-student-details;to-view-student-details-with-class",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user has access to endpoint \"/fetchStudents?studentClass\u003d1A\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/fetchStudents?studentClass\u003d1A\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.api.stepdefinition.ViewStudentDetailsStepdefinition.userHasAccessToEndpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 40000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user makes a request to view student IDs",
+            "match": {
+              "location": "com.api.stepdefinition.ViewStudentDetailsStepdefinition.userMakesARequestToViewstudentIDs()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 29000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user makes a request to view details of a student ID",
+            "match": {
+              "location": "com.api.stepdefinition.ViewStudentDetailsStepdefinition.userMakesARequestToViewDetailsOfStudentID()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user should get the response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "com.api.stepdefinition.ViewStudentDetailsStepdefinition.userShouldGetTheResponseCode(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@studentAPI"
+          },
+          {
+            "name": "@viewStudent"
+          },
+          {
+            "name": "@viewStudentDetails"
+          }
+        ]
+      }
+    ],
+    "name": "To view the Student details",
+    "description": "",
+    "id": "to-view-the-student-details",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ViewStudentDetails.feature",
+    "tags": [
+      {
+        "name": "@studentAPI",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@viewStudent",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 13
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+
+@studentAPI @createStudent @createStudentDataTable
+Scenario Outline: To create new student using cucumber Data Table # src/test/resources/features/CreateStudent.feature:14
+  Given user has access to endpoint "/addStudent"                 # com.api.stepdefinition.ViewStudentDetailsStepdefinition.userHasAccessToEndpoint(java.lang.String)
+  When user creates a student                                     # com.api.stepdefinition.CreateStudentStepdefinition.userCreatesAStudent(io.cucumber.datatable.DataTable)
+  Then user should get the response code 200                      # com.api.stepdefinition.ViewStudentDetailsStepdefinition.userShouldGetTheResponseCode(java.lang.Integer)
+
+@studentAPI @createStudent @createStudentDataTable
+Scenario Outline: To create new student using cucumber Data Table # src/test/resources/features/CreateStudent.feature:15
+  Given user has access to endpoint "/addStudent"                 # com.api.stepdefinition.ViewStudentDetailsStepdefinition.userHasAccessToEndpoint(java.lang.String)
+  When user creates a student                                     # com.api.stepdefinition.CreateStudentStepdefinition.userCreatesAStudent(io.cucumber.datatable.DataTable)
+  Then user should get the response code 200                      # com.api.stepdefinition.ViewStudentDetailsStepdefinition.userShouldGetTheResponseCode(java.lang.Integer)
+
+@studentAPI @createStudent @createStudentFromJSON
+Scenario Outline: To create new student using JSON data                              # src/test/resources/features/CreateStudent.feature:26
+  Given user has access to endpoint "/addStudent"                                    # com.api.stepdefinition.ViewStudentDetailsStepdefinition.userHasAccessToEndpoint(java.lang.String)
+  When user creates a student using data "create3" from JSON file "studentBody.json" # com.api.stepdefinition.CreateStudentStepdefinition.userCreatesAStudentUsingDataFromJSONFile(java.lang.String,java.lang.String)
+  Then user should get the response code 200                                         # com.api.stepdefinition.ViewStudentDetailsStepdefinition.userShouldGetTheResponseCode(java.lang.Integer)
+
+@studentAPI @createStudent @createStudentFromJSON
+Scenario Outline: To create new student using JSON data                              # src/test/resources/features/CreateStudent.feature:27
+  Given user has access to endpoint "/addStudent"                                    # com.api.stepdefinition.ViewStudentDetailsStepdefinition.userHasAccessToEndpoint(java.lang.String)
+  When user creates a student using data "create4" from JSON file "studentBody.json" # com.api.stepdefinition.CreateStudentStepdefinition.userCreatesAStudentUsingDataFromJSONFile(java.lang.String,java.lang.String)
+  Then user should get the response code 200                                         # com.api.stepdefinition.ViewStudentDetailsStepdefinition.userShouldGetTheResponseCode(java.lang.Integer)
+
+@studentAPI @deleteStudent @deleteStudentIDs
+Scenario Outline: To delete a student with ID        # src/test/resources/features/DeleteStudent.feature:17
+  Given user has access to endpoint "/deleteStudent" # com.api.stepdefinition.ViewStudentDetailsStepdefinition.userHasAccessToEndpoint(java.lang.String)
+  When user deletes a student                        # com.api.stepdefinition.DeleteStudentStepdefinition.userDeletesAStudent(io.cucumber.datatable.DataTable)
+  Then user should get the response code 200         # com.api.stepdefinition.ViewStudentDetailsStepdefinition.userShouldGetTheResponseCode(java.lang.Integer)
+
+@studentAPI @updateStudent @updateStudent
+Scenario Outline: To update a student with ID        # src/test/resources/features/UpdateStudent.feature:14
+  Given user has access to endpoint "/updateStudent" # com.api.stepdefinition.ViewStudentDetailsStepdefinition.userHasAccessToEndpoint(java.lang.String)
+  And user updates a student                         # com.api.stepdefinition.UpdateStudentStepdefinition.userUpdatesAStudent(io.cucumber.datatable.DataTable)
+  Then user should get the response code 200         # com.api.stepdefinition.ViewStudentDetailsStepdefinition.userShouldGetTheResponseCode(java.lang.Integer)
+
+@studentAPI @viewStudent @viewStudentDetails
+Scenario: To view student details with ID and Class                       # src/test/resources/features/ViewStudentDetails.feature:5
+  Given user has access to endpoint "/fetchStudents?id=2&studentClass=3A" # com.api.stepdefinition.ViewStudentDetailsStepdefinition.userHasAccessToEndpoint(java.lang.String)
+  When user makes a request to view student IDs                           # com.api.stepdefinition.ViewStudentDetailsStepdefinition.userMakesARequestToViewstudentIDs()
+  When user makes a request to view details of a student ID               # com.api.stepdefinition.ViewStudentDetailsStepdefinition.userMakesARequestToViewDetailsOfStudentID()
+  Then user should get the response code 200                              # com.api.stepdefinition.ViewStudentDetailsStepdefinition.userShouldGetTheResponseCode(java.lang.Integer)
+
+@studentAPI @viewStudent @viewStudentDetails
+Scenario: To view student details with class                         # src/test/resources/features/ViewStudentDetails.feature:12
+  Given user has access to endpoint "/fetchStudents?studentClass=1A" # com.api.stepdefinition.ViewStudentDetailsStepdefinition.userHasAccessToEndpoint(java.lang.String)
+  When user makes a request to view student IDs                      # com.api.stepdefinition.ViewStudentDetailsStepdefinition.userMakesARequestToViewstudentIDs()
+  When user makes a request to view details of a student ID          # com.api.stepdefinition.ViewStudentDetailsStepdefinition.userMakesARequestToViewDetailsOfStudentID()
+  Then user should get the response code 200                         # com.api.stepdefinition.ViewStudentDetailsStepdefinition.userShouldGetTheResponseCode(java.lang.Integer)
