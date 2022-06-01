@@ -40,17 +40,6 @@ public class CreateStudentStepdefinition {
 
 	}
 
-	private void validateStudentData(JSONObject studentData, StudentDTO studentDTO) {
-		LOG.info(studentData);
-		assertNotNull("ID missing", studentDTO.getId());
-		assertEquals("First Name did not match", studentData.get("firstname"), studentDTO.getStudent().getFirstname());
-		assertEquals("Last Name did not match", studentData.get("lastname"), studentDTO.getStudent().getLastname());
-		assertEquals("ID did not match", studentData.get("totalprice"), studentDTO.getStudent().getId());
-		assertEquals("Nationality did not match", studentData.get("depositpaid"), studentDTO.getStudent().getNationality());
-		assertEquals("Student Class did not match", studentData.get("additionalneeds"), studentDTO.getStudent().getStudentClass());
-
-	}
-
 
 	@When("user creates a student using data {string} from JSON file {string}")
 	public void userCreatesAStudentUsingDataFromJSONFile(String dataKey, String JSONFile) {
